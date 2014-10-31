@@ -17,6 +17,7 @@ To get up and running with development, __you need the following installed__:
 * gruntjs `$ npm install -g grunt-cli`
 
 On __first run__ the following needs to be run:
+`$ npm install`
 `$ bower install`  
 `$ grunt `
 
