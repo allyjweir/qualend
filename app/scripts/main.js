@@ -4,14 +4,13 @@
 
 console.log('\'Allo \'Allo!');
 
+//Main
+$(document).ready(function() {
 
 // Shop view (shop.html)
 
-//Main
-$(document).ready(function() {
-	var counter=0
-
 	//Put listeners on each 'Buy Now' button to increase count of basket in navbar
+	var counter=0
 	$('.btn-buy').click(function(){
 		console.log('buy button clicked!');
 		counter++;
