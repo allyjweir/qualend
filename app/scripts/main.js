@@ -15,8 +15,7 @@ $(document).ready(function() {
 		console.log('buy button clicked!');
 		counter++;
 		$('#cart-count').text(counter);
-		//Show popup to signal success here.
-		//Add shake notification here.
+		alert("Product added to cart. Click cart in navigation bar to proceed to checkout!");
 	});
 
 });
