@@ -1,18 +1,10 @@
-<!-- A simple sign up page for users to put in their personal details. This
-tests their trust of the website despite the audio/visual/control nag.
+<!-- A mock success page.
 
-Details asked for:
-  -First Name
-  -Last Name
-  -Email
-  -Phone Number
-  -Password
-  -Confirm Password
+This will confirm that the user's (fake) transaction has been successful and
+will serve as the end of the test.
 
-Then they press a submit button that appears to successfully register.
-
-PLEASE NOTE - This does not save any information. It merely directs to another
-page with illusion of success. -->
+PLEASE NOTE - This page does not take any information in, it merely redirects to
+a success page regardless of information input.-->
 
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -61,7 +53,7 @@ page with illusion of success. -->
               </li>
               <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
-                  <input required type="text" class="form-control" placeholder="Search">
+                  <input type="text" class="form-control" placeholder="Search">
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
               </form>
@@ -69,80 +61,36 @@ page with illusion of success. -->
             <ul class="nav navbar-nav navbar-right">
               <li><a href="/checkout.html"><i class="fa fa-shopping-cart"></i> Cart <span id="cart-count" class="badge">0</span></a></li>
               <li><a href="/register.html">Register</a></li>
-              <li><a href="/login.html">Login</a></li>
+              <li><a href="https://178.62.83.170/login.html">Login</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
 
-      <div class="page-header">
-        <h1>Register <small>to access all our great deals!</small></h1>
-      </div>
 
       <div class="row">
-        <div class="col-md-8">
-          <form action="http://178.62.71.225/register_success.html" class="form-horizontal" role="form">
-            <div class="form-group">
-              <label for="inputFn3" class="col-sm-2 control-label">First Name</label>
-              <div class="col-sm-10">
-                <input required type="text" class="form-control" id="inputFn3" placeholder="First Name">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputLn3" class="col-sm-2 control-label">Last Name</label>
-              <div class="col-sm-10">
-                <input required type="text" class="form-control" id="inputLn3" placeholder="Last Name">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-              <div class="col-sm-10">
-                <input required type="email" class="form-control" id="inputEmail3" placeholder="Email">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputphone3" class="col-sm-2 control-label">Phone</label>
-              <div class="col-sm-10">
-                <input required type="text" class="form-control" id="inputphone3" placeholder="Phone">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-              <div class="col-sm-10">
-                <input required type="password" class="form-control" id="inputPassword3" placeholder="Password">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputPasswordConfirm3" class="col-sm-2 control-label">Confirm Password</label>
-              <div class="col-sm-10">
-                <input required type="password" class="form-control" id="inputPasswordConfirm3" placeholder="Confirm Password">
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <div class="checkbox">
-                  <label>
-                    <input required type="checkbox"> I agree to the Terms and Conditions
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" value=" Register" class="btn btn-lg btn-primary pull-right" id="submit">Register</button>
+
+          <div class="col-md-2">
+
+          </div>
+          <div class="col-md-8 well">
+              <div class="col-md-1">
 
               </div>
-            </div>
-          </form>
-        </div>
+              <div class="col-md-2">
+                <i style="vertical-align: middle"class="text-success fa fa-check-circle fa-5x"></i>
 
-        <div class="col-md-4 well">
-          <h2><i style="color: red"class="fa fa-heart"></i> JA Inc. cares!</h2>
+              </div>
+              <div class="col-md-1">
 
-          <p>We specialise in mobile phones and accessories for a range of devices. We love our products and want to share them with you. You are a few steps away from being able to make your own order.</p>
-          <br/>
-          <p><b>Register now</b> for some great deals!</p>
-        </div>
+              </div>
+              <div class="col-md-8">
+                  <h1>Success!</h1>
+                  <p>
+                      You have registered. Please login with the button to the top-right of the page!
+                  </p>
+              </div>
+          </div>
       </div>
     </div>
 
@@ -173,6 +121,10 @@ page with illusion of success. -->
 
         <script src="scripts/main.js"></script>
         <script src="scripts/hello.js"></script>
+        <!--
+          <script src="scripts/audio_nag.js"></script>
+          <script src="scripts/visual_nag.js"></script>
+        -->
         <!-- endbuild -->
 
         <!-- build:js scripts/vendor/bootstrap.js -->
