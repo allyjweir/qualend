@@ -3,6 +3,6 @@
 
   console.log('Audio Nag initialised');
 
-  test_audio = new buzz.sound('/media/alarm.mp3').play();
+  test_audio = new buzz.sound('/media/alarm.ogg').play();
 
 }).call(this);
